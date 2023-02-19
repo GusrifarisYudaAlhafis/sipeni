@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sipeni/features/authentication/presentation/pages/login/components/header.dart';
 import 'package:sipeni/ui/theme/theme.dart';
 
+import 'components/content.dart';
+
 class LoginPage extends StatelessWidget {
   static const String routeName = '/login';
   const LoginPage({super.key});
@@ -13,7 +15,7 @@ class LoginPage extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            height: 408,
+            height: 376,
             decoration: BoxDecoration(
               color: background,
               borderRadius: BorderRadius.vertical(
@@ -24,6 +26,7 @@ class LoginPage extends StatelessWidget {
           ListView(
             children: [
               Header(),
+              Content(),
             ],
           )
         ],
