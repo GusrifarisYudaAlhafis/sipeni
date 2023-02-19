@@ -1,28 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:sipeni/ui/theme/colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class AppTheme {
-  ThemeData get lightTheme => ThemeData(
-        colorScheme: ColorScheme(
-          primary: AppColors.orangePeel,
-          onPrimary: AppColors.black,
-          secondary: AppColors.teaGreen,
-          onSecondary: AppColors.teaGreen.withOpacity(0.5),
-          surface: Colors.grey.withOpacity(0.25),
-          onSurface: Colors.grey.withOpacity(0.25),
-          background: Colors.white,
-          onBackground: Colors.white,
-          error: Colors.red,
-          onError: Colors.red,
-          brightness: Brightness.light,
-        ),
-        iconTheme: const IconThemeData(
-          color: Colors.white,
-        ),
-        textTheme: const TextTheme(
-          headline1: TextStyle(
-            fontSize: 32,
-          ),
-        ),
-      );
-}
+double defaultMargin = 24;
+
+Color background = const Color(0xFFC3F1BD);
+Color primary = const Color(0xFF38803F);
+
+TextStyle textPrimary = GoogleFonts.poppins(
+  color: primary,
+);
+
+TextStyle textSecondary = GoogleFonts.roboto(
+  color: primary,
+);
+
+FontWeight medium = FontWeight.w500;
