@@ -6,7 +6,7 @@ void main(){
       title: "Latihan Drawable Flutter", 
       //menghilangkan debug banner
       debugShowCheckedModeBanner: false, 
-      home: HomePage(),
+      // home: HomePage(),
       )
   );
 }
