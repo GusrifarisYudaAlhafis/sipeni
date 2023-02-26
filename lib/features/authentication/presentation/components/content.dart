@@ -10,8 +10,7 @@ class Content extends StatelessWidget {
       margin: EdgeInsets.only(
         top: 19,
         left: 28,
-        right: 30,
-        bottom: 27,
+        right: 30
       ),
       child: Column(
         children: [
@@ -19,9 +18,10 @@ class Content extends StatelessWidget {
             'Sistem Penginputan Nilai KP dan TA',
             style: textPrimary.copyWith(
               fontSize: 18,
-              fontWeight: medium,
+              fontWeight: medium
             )
           ),
+          SizedBox(height: 27),
           Image.asset('assets/images/logo_uin.png')
         ]
       )
