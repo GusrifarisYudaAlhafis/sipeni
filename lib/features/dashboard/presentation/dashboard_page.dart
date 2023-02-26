@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sipeni/features/dashboard/presentation/components/header.dart';
 
 class DashboardPage extends StatelessWidget {
   static const String routeName = '/dashboard';
@@ -7,13 +8,28 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Dashboard'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Text('Dashboard Page'),
-      ),
+      body: Stack(
+        children: [
+          Align(
+            alignment: Alignment.topRight,
+            child: Container(
+              width: 90,
+              height: 120,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/icon.png'),
+                  fit: BoxFit.cover
+                )
+              )
+            )
+          ),
+          ListView(
+            children: [
+              Header()
+            ]
+          )
+        ]
+      )
     );
   }
 }
