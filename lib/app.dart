@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sipeni/features/authentication/presentation/login_page.dart';
 import 'package:sipeni/features/dashboard/presentation/dashboard_page.dart';
+import 'package:sipeni/features/mahasiswa/presentation/mahasiswa_page.dart';
 
 class App extends StatelessWidget {
   const App({
@@ -15,7 +16,9 @@ class App extends StatelessWidget {
       initialRoute: LoginPage.routeName,
       routes: {
         LoginPage.routeName: (context) => const LoginPage(),
-        DashboardPage.routeName: (context) => const DashboardPage()
+        DashboardPage.routeName: (context) => const DashboardPage(),
+        MahasiswaPage.routeName: (context) => const MahasiswaPage()
+
       }
     );
   }
