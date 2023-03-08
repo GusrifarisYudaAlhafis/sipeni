@@ -20,7 +20,6 @@ class App extends StatelessWidget {
         DashboardPage.routeName: (context) => const DashboardPage(),
         MahasiswaPage.routeName: (context) => const MahasiswaPage(),
         ProfileMahasiswaPage.routeName: (context) => const ProfileMahasiswaPage(),
-
       }
     );
   }

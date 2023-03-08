@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:sipeni/ui/theme/theme.dart';
-import 'package:sipeni/features/mahasiswa/presentation/components/green_background.dart';
 import 'package:sipeni/ui/widgets/header_widget.dart';
-import 'package:sipeni/ui/widgets/status_widget.dart';
+
+import 'components/green_background.dart';
 
 class MahasiswaPage extends StatelessWidget {
   static const String routeName = '/mahasiswa';
-
   const MahasiswaPage({super.key});
 
   @override
@@ -25,7 +24,7 @@ class MahasiswaPage extends StatelessWidget {
                   fit: BoxFit.cover
                 )
               )
-            ),
+            )
           ),
           ListView(
             padding: EdgeInsets.symmetric(horizontal: 28),
@@ -33,26 +32,20 @@ class MahasiswaPage extends StatelessWidget {
               HeaderWidget(),
               SizedBox(height: 15),
               Container(
-                  padding: EdgeInsets.only(left:12),
-                  child: Text('Daftar Mahasiswa Kerja Praktik', style: textPrimary.copyWith(
-                    fontSize: 16, fontWeight: semiBold, 
+                padding: EdgeInsets.only(left:12),
+                child: Text(
+                  'Daftar Mahasiswa Kerja Praktik',
+                  style: textPrimary.copyWith(
+                    fontSize: 16,
+                    fontWeight: semiBold 
                   )
-                  ),
-
-              ),
-              
-             
-
-            ],
+                )
+              )
+            ]
           ),
-          GreenBackground(
-
-          ),
-          
-          
-          
-        ],
-      ),
+          GreenBackground()
+        ]
+      )
     );
   }
 }

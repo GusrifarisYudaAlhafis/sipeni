@@ -12,10 +12,12 @@ class StatusWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: background,
         borderRadius: BorderRadius.circular(10),
-       
       ),
       child: Container(
-        padding: EdgeInsets.only(left: 8, right: 8),
+        padding: EdgeInsets.only(
+          left: 8,
+          right: 8
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -26,24 +28,19 @@ class StatusWidget extends StatelessWidget {
                   height: 13,
                   decoration: BoxDecoration(
                     color: Colors.red,
-                    borderRadius: BorderRadius.circular(50),
-                  ),
+                    borderRadius: BorderRadius.circular(50)
+                  )
                 ),
                 SizedBox(width: 5),
-                Text('Sudah Diinput', style: textBox.copyWith(
-                  fontSize: 9,
-                ),
-                ),
-              ],
+                Text(
+                  'Sudah Diinput',
+                  style: textBox.copyWith(fontSize: 9)
+                )
+              ]
             )
-            
-            
-          ],
-        ),
+          ]
+        )
       )
-      //CHILD ROW
-     
     );
   }
-
-} 
+}

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sipeni/ui/theme/theme.dart';
 
 class Content extends StatelessWidget {
   const Content({super.key});
@@ -10,15 +9,9 @@ class Content extends StatelessWidget {
       body: Center(
         child: Container(
           height: 300,
-          width: 300,
-
-      )),
-      
-
+          width: 300
+        )
       )
-    ;
-      
-    
-    
+    );
   }
 }
