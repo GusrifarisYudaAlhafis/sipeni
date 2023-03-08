@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sipeni/ui/theme/theme.dart';
 import 'package:sipeni/features/mahasiswa/presentation/components/green_background.dart';
 import 'package:sipeni/ui/widgets/header_widget.dart';
+import 'package:sipeni/ui/widgets/status_widget.dart';
 
 class MahasiswaPage extends StatelessWidget {
   static const String routeName = '/mahasiswa';
@@ -46,7 +47,9 @@ class MahasiswaPage extends StatelessWidget {
           ),
           GreenBackground(
 
-          )
+          ),
+          
+          
           
         ],
       ),

@@ -1,20 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:sipeni/features/kp/presentation/pembimbing/profile_mahasiswa_page.dart';
 import 'package:sipeni/ui/theme/theme.dart';
 
-import 'box.dart';
+import 'box_list.dart';
 
 class GreenBackground extends StatelessWidget {
   const GreenBackground({super.key});
 
+
+ // final VoidCallback onTap;
+
   @override
   Widget build(BuildContext context) {
     return Container(
+      
       padding: EdgeInsets.only(left: 20, right: 20, top: 36, bottom: 51),
       margin: EdgeInsets.only(top: 222),
       decoration: BoxDecoration(
         color: background,
         borderRadius: BorderRadius.vertical(top: Radius.circular(39)),
       ),
+     // onTap: onTap,
       child: Column(
         children: [
           Container(
@@ -30,12 +36,25 @@ class GreenBackground extends StatelessWidget {
           SingleChildScrollView(
             child: Column(
               children: [
-                Box(),
+                BoxList(
+                  onTap: () {
+                  Navigator.pushNamed(context, ProfileMahasiswaPage.routeName);
+
+                }
+                ),
+                  
+              
                 SizedBox(height: 25),
-                Box(),
+                BoxList(
+                  onTap: () {
+                  Navigator.pushNamed(context, ProfileMahasiswaPage.routeName);
+
+                }
+                ),
               ],
             ),
-          )
+            
+          ),
         ],
       ),
     );
