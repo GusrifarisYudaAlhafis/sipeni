@@ -14,7 +14,5 @@ TextStyle textHint = GoogleFonts.poppins(color: background);
 TextStyle textButton = GoogleFonts.poppins(color: white);
 TextStyle textBox = GoogleFonts.poppins(color: black);
 
-
-
 FontWeight medium = FontWeight.w500;
 FontWeight semiBold = FontWeight.w600;
