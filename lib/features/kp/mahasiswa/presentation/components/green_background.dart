@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sipeni/features/kp/presentation/pembimbing/profile_mahasiswa_page.dart';
+import 'package:sipeni/features/kp/profile/presentation/profile_mahasiswa_kp_page.dart';
 import 'package:sipeni/ui/theme/theme.dart';
-
-import 'box_list.dart';
+import 'package:sipeni/ui/widgets/box_list_widget.dart';
 
 class GreenBackground extends StatelessWidget {
   const GreenBackground({super.key});
@@ -24,32 +23,34 @@ class GreenBackground extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(
-              left: 25,
-              right: 6
-            ),
+            padding: EdgeInsets.symmetric(horizontal: 25),
             child: Text(
-              'Dibawah ini merupakan daftar mahasiswa bimbingan maupun mahasiswa yang diuji.',
-              style: textBox.copyWith(fontSize: 15)
+              'Di bawah ini merupakan daftar mahasiswa bimbingan maupun mahasiswa yang diuji.',
+              style: textInfo.copyWith(fontSize: 15),
+              textAlign: TextAlign.justify
             )
           ),
-          SizedBox(height: 48),
+          SizedBox(height: 33),
           SingleChildScrollView(
             child: Column(
               children: [
-                BoxList(
+                BoxListWidget(
+                  photo: 'assets/images/profile.png',
                   nama: 'Tri Handoyo Adi Putra',
                   nim: '12050114323',
+                  status: true,
                   onTap: () {
-                    Navigator.pushNamed(context, ProfileMahasiswaPage.routeName);
+                    Navigator.pushNamed(context, ProfileMahasiswaKPPage.routeName);
                   }
                 ),
                 SizedBox(height: 25),
-                BoxList(
+                BoxListWidget(
+                  photo: 'assets/images/profile.png',
                   nama: 'Ibnu Sahid',
                   nim: '12050114323',
+                  status: false,
                   onTap: () {
-                    Navigator.pushNamed(context, ProfileMahasiswaPage.routeName);
+                    Navigator.pushNamed(context, ProfileMahasiswaKPPage.routeName);
                   }
                 )
               ]

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:sipeni/features/authentication/presentation/components/content.dart';
 import 'package:sipeni/features/authentication/presentation/components/header.dart';
 import 'package:sipeni/features/dashboard/presentation/dashboard_page.dart';
 import 'package:sipeni/ui/theme/theme.dart';
 import 'package:sipeni/ui/widgets/button_widget.dart';
 import 'package:sipeni/ui/widgets/text_field_widget.dart';
-
-import 'components/content.dart';
 
 class LoginPage extends StatefulWidget {
   static const String routeName = '/login';
