@@ -11,6 +11,8 @@ Color secondary = const Color(0xFF28AC3D);
 Color backgroundStatus = const Color(0xFFD9D9D9);
 Color red = const Color(0xFFDD3434);
 Color succes = const Color(0xFF42F95F);
+Color thin = const Color(0xFF1E1D1D);
+Color aqua = const Color(0xFFAFE3E6);
 
 TextStyle textPrimary = GoogleFonts.poppins(color: primary);
 TextStyle textSecondary = GoogleFonts.roboto(color: primary);
@@ -19,6 +21,7 @@ TextStyle textButton = GoogleFonts.poppins(color: white);
 TextStyle textHeader = GoogleFonts.poppins(color: secondary);
 TextStyle textBox = GoogleFonts.poppins(color: black);
 TextStyle textInfo = GoogleFonts.roboto(color: black);
+TextStyle textThin = GoogleFonts.poppins(color: thin);
 
 FontWeight medium = FontWeight.w500;
 FontWeight semiBold = FontWeight.w600;
