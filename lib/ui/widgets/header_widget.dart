@@ -7,30 +7,28 @@ class HeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: 12),
+      padding: EdgeInsets.only(left: 2),
       margin: EdgeInsets.only(top: 110),
       child: Column(
-    
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          
-              Text('Assalamualaikum', 
-              style: textPrimary.copyWith(
-                fontSize: 16, fontWeight: medium
-                )
-                ),
-                SizedBox(height: 11),
-                Text('User 1', 
-                style: textSecondary.copyWith(fontSize: 20, fontWeight: semiBold)
-                ),
-            ],
+          Text(
+            'Assalamualaikum',
+            style: textHeader.copyWith(
+              fontSize: 16,
+              fontWeight: medium
+            )
+          ),
+          SizedBox(height: 1),
+          Text(
+            'User 1',
+            style: textHeader.copyWith(
+              fontSize: 20,
+              fontWeight: semiBold
+            )
           )
-              
-            
-              
-              
-            
-          
-        );
+        ]
+      )
+    );
   }
 }
