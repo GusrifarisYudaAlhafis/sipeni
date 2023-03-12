@@ -8,7 +8,7 @@ class GreenBackground extends StatelessWidget {
   const GreenBackground({super.key});
 
 
- // final VoidCallback onTap;
+
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class GreenBackground extends StatelessWidget {
         color: background,
         borderRadius: BorderRadius.vertical(top: Radius.circular(39)),
       ),
-     // onTap: onTap,
+     
       child: Column(
         children: [
           Container(

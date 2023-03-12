@@ -20,8 +20,9 @@ class HeaderWidget extends StatelessWidget {
                 )
                 ),
                 SizedBox(height: 11),
-                Text('hai user 1', 
-                style: textSecondary.copyWith(fontSize: 20))
+                Text('User 1', 
+                style: textSecondary.copyWith(fontSize: 20, fontWeight: semiBold)
+                ),
             ],
           )
               

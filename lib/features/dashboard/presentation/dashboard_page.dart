@@ -56,7 +56,8 @@ class DashboardPage extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, MahasiswaPage.routeName);
 
-                },),
+                },
+                ),
                 
                 
                 SizedBox(height: 29),

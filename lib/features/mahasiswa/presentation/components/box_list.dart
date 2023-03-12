@@ -3,13 +3,15 @@ import 'package:sipeni/ui/theme/theme.dart';
 import 'package:sipeni/ui/widgets/status_widget.dart';
 
 class BoxList extends StatelessWidget {
-  const BoxList ({super.key, required Null Function() onTap});
+  const BoxList ({super.key, required this.onTap});
 
+  final VoidCallback onTap;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-      width: 350,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 350,
       height: 93,
       decoration: BoxDecoration(
 
@@ -26,6 +28,11 @@ class BoxList extends StatelessWidget {
         ],
         
       ),
+      
+      
+      
+      
+      
       
       //CHILD ROW
       child: Row(
@@ -69,6 +76,7 @@ class BoxList extends StatelessWidget {
           
         ]
       ),
+    ),
     );
   }
 
