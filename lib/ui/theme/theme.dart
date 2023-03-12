@@ -13,6 +13,7 @@ Color red = const Color(0xFFDD3434);
 Color succes = const Color(0xFF42F95F);
 Color thin = const Color(0xFF1E1D1D);
 Color aqua = const Color(0xFFAFE3E6);
+Color grey = const Color(0xFFF4F4F4);
 
 TextStyle textPrimary = GoogleFonts.poppins(color: primary);
 TextStyle textSecondary = GoogleFonts.roboto(color: primary);
