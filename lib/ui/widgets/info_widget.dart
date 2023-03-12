@@ -30,7 +30,7 @@ class InfoWidget extends StatelessWidget {
             )
           ]
         ),
-        SizedBox(width: 38),
+      //  SizedBox(width: 38),
         Column(
           children: [
             StatusWidget(
