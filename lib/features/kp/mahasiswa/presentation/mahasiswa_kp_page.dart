@@ -8,10 +8,10 @@ class MahasiswaKPPage extends StatelessWidget {
   static const String routeName = '/mahasiswa-kp';
   const MahasiswaKPPage({super.key});
 
-  @override
+@override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+        body: Stack(
         children: [
           Align(
             alignment: Alignment.topRight,
