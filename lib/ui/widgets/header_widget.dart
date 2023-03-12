@@ -14,7 +14,7 @@ class HeaderWidget extends StatelessWidget {
         children: [
           Text(
             'Assalamualaikum',
-            style: textPrimary.copyWith(
+            style: textHeader.copyWith(
               fontSize: 16,
               fontWeight: medium
             )
@@ -22,7 +22,7 @@ class HeaderWidget extends StatelessWidget {
           SizedBox(height: 1),
           Text(
             'User 1',
-            style: textPrimary.copyWith(
+            style: textHeader.copyWith(
               fontSize: 20,
               fontWeight: semiBold
             )

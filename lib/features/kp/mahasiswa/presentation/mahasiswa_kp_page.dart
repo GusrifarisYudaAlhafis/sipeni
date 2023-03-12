@@ -4,9 +4,9 @@ import 'package:sipeni/ui/widgets/header_widget.dart';
 
 import 'components/green_background.dart';
 
-class MahasiswaPage extends StatelessWidget {
-  static const String routeName = '/mahasiswa';
-  const MahasiswaPage({super.key});
+class MahasiswaKPPage extends StatelessWidget {
+  static const String routeName = '/mahasiswa-kp';
+  const MahasiswaKPPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class MahasiswaPage extends StatelessWidget {
               HeaderWidget(),
               SizedBox(height: 15),
               Container(
-                padding: EdgeInsets.only(left:12),
+                padding: EdgeInsets.only(left: 2),
                 child: Text(
                   'Daftar Mahasiswa Kerja Praktik',
                   style: textPrimary.copyWith(

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:sipeni/features/mahasiswa/presentation/mahasiswa_page.dart';
+import 'package:sipeni/features/kp/mahasiswa/presentation/mahasiswa_kp_page.dart';
+import 'package:sipeni/features/ta/mahasiswa/presentation/mahasiswa_ta_page.dart';
 import 'package:sipeni/ui/theme/theme.dart';
 import 'package:sipeni/ui/widgets/box_widget.dart';
-
-import '../../../ui/widgets/header_widget.dart';
+import 'package:sipeni/ui/widgets/header_widget.dart';
 
 class DashboardPage extends StatelessWidget {
   static const String routeName = '/dashboard';
@@ -54,17 +54,17 @@ class DashboardPage extends StatelessWidget {
               SizedBox(height: 17),
               BoxWidget(
                 title: 'Input Nilai Kerja Praktek',
-                desc:'Silahkan melakukan penginputan Nilai Kerja Praktik sebagai Pembimbing, Penguji maupun Perwakilan Instansi disini',
+                desc:'Silahkan melakukan penginputan Nilai Kerja Praktik sebagai Pembimbing, Penguji maupun Perwakilan Instansi di sini',
                 onTap: () {
-                  Navigator.pushNamed(context, MahasiswaPage.routeName);
+                  Navigator.pushNamed(context, MahasiswaKPPage.routeName);
                 }
               ),
               SizedBox(height: 29),
               BoxWidget(
                 title: 'Input Nilai Tugas Akhir',
-                desc:'Silahkan melakukan penginputan Nilai Tugas Akhir sebagai Ketua Sidang, Pembimbing, Penguji maupun Perwakilan Instansi disini',
+                desc:'Silahkan melakukan penginputan Nilai Tugas Akhir sebagai Ketua Sidang, Pembimbing, Penguji maupun Perwakilan Instansi di sini',
                 onTap: () {
-                  Navigator.pushNamed(context, MahasiswaPage.routeName);
+                  Navigator.pushNamed(context, MahasiswaTAPage.routeName);
                 }
               )
             ]

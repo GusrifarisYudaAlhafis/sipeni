@@ -16,7 +16,7 @@ class Content extends StatelessWidget {
         children: [
           Text(
             'Sistem Penginputan Nilai KP dan TA',
-            style: textPrimary.copyWith(
+            style: textSecondary.copyWith(
               fontSize: 18,
               fontWeight: medium
             )
